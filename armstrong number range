@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main(){
+    int n1,n2,sum=0,i,temp,add,rem;
+    scanf("%d%d",&n1,&n2);
+   
+    for( i=n1;i<=n2;i++){
+         temp=i;
+        sum=0;
+        add=0;
+        while(temp!=0){
+            rem=temp%10;
+            sum=rem*rem*rem;
+            add=add+sum;
+            temp=temp/10;
+        }
+        if(add==i){
+            printf("%d ",i);
+        }
+    }
+}
