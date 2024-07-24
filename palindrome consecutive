@@ -1,0 +1,25 @@
+#include<stdio.h>
+
+int main(){
+    int num, i, j, sum = 0, count = 0, rem;
+    
+    scanf("%d", &num);
+    
+    for (j = num; count < 5; j++) {
+        sum = 0;
+        i = j;
+        
+        while (i != 0) {
+            rem = i % 10;
+            sum = sum * 10 + rem;
+            i = i / 10;
+        }
+        
+        if (j == sum) {
+            printf("%d", j);
+            count++;
+        }
+    }
+    
+    return 0;
+}
