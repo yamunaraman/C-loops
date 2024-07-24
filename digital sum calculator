@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main(){
+    int num,sum=0,add=0;
+    scanf("%d",&num);
+    for(int i=num;num!=0;i++){
+        int a=num%10;
+        if(a%2==0){
+            sum=sum+a;
+        }
+        else if(a%2!=0){
+            add=add+a;
+        }
+        num=num/10;
+    }
+    printf("sum=%d\n,add=%d",sum,add);
+}
