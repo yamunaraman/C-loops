@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main()
+{
+  int num;
+  int fir,last;
+  printf("Enter the number:");
+  scanf("%d",&num);
+  last=num%10;
+  fir=num;
+  while(fir>=10){
+      fir=fir/10;
+  }
+  printf("first=%d\n  last=%d",fir,last);
+}
