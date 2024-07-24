@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main(){
+    int num,squr,temp,count=1;
+    scanf("%d",&num);
+    temp=num;
+    squr=num*num;
+    while(num!=0){
+        count=count*10;
+        num=num/10;
+    }
+    if(squr%count==temp){
+        printf("it is an automorphic number");
+    }
+    else{
+        printf("it is not a automorphic number");
+    }
+}
